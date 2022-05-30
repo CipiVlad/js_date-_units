@@ -1,0 +1,44 @@
+// sass --watch assets/scss/main.scss assets/css/style.css
+
+@import "_generals.scss";
+@import "_mixin.scss";
+@import "_variables.scss";
+
+.datetime {
+    color: whitesmoke;
+    background-color: rgb(13, 79, 133);
+    border-radius: 5px;
+    width: 340px;
+    padding: 15px 10px;
+    border: 4px solid #a4bdd0;
+}
+
+.date {
+    font: size 20px;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+.time {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.time span:not(:last-child) {
+    position: relative;
+    margin: 0 6px;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 3px;
+    font-size: 3rem;
+}
+
+.time span:last-child {
+    background-color: #ce7b16;
+    padding: 2px 5px;
+    margin-top: 10px;
+    border-radius: 3px;
+}
