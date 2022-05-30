@@ -42,24 +42,24 @@ date = new Date(2000, 9, 2, 11, 45, 10);
 // console.log(date.getFullYear())
 // console.log(date.getMonth())
 
-let months = [
-    "January",
-    "February",
-    "March",
-    "April",
-    "May",
-    "June",
-    "July",
-    "August",
-    "September",
-    "October",
-    "November",
-    "December"
-]
-//
-console.log("%c date get Methods", "color: tomato")
+// let months = [
+//     "January",
+//     "February",
+//     "March",
+//     "April",
+//     "May",
+//     "June",
+//     "July",
+//     "August",
+//     "September",
+//     "October",
+//     "November",
+//     "December"
+// ]
+// //
+// console.log("%c date get Methods", "color: tomato")
 
-console.log(months[date.getDate()]);
+// console.log(months[date.getDate()]);
 // console.log("%c date get Methods", "color: tomato")
 
 // console.log(date.getDate()); //1-31
@@ -114,7 +114,7 @@ console.log(months[date.getDate()]);
 
 
 // ______________________lvl 1-1__________________________________________
-console.log("%c lvl1-1 new Date()", "color: yellow")
+// console.log("%c lvl1-1 new Date()", "color: yellow")
 
 // let date1 = document.getElementById("date1");
 // let date2 = document.getElementById("date2");
@@ -128,30 +128,30 @@ console.log("%c lvl1-1 new Date()", "color: yellow")
 
 // ______________________lvl 1-2_________________________________________
 
-let monate = [
-    "Januar",
-    "Februar",
-    "März",
-    "April",
-    "Mai",
-    "Juni",
-    "Juli",
-    "August",
-    "September",
-    "Oktober",
-    "November",
-    "Dezember"
-];
+// let monate = [
+//     "Januar",
+//     "Februar",
+//     "März",
+//     "April",
+//     "Mai",
+//     "Juni",
+//     "Juli",
+//     "August",
+//     "September",
+//     "Oktober",
+//     "November",
+//     "Dezember"
+// ];
 
-let wochenTag = [
-    "Sonntag",
-    "Montag",
-    "Dienstag",
-    "Mittwoch",
-    "Donnerstag",
-    "Freitag",
-    "Samstag"
-];
+// let wochenTag = [
+//     "Sonntag",
+//     "Montag",
+//     "Dienstag",
+//     "Mittwoch",
+//     "Donnerstag",
+//     "Freitag",
+//     "Samstag"
+// ];
 // let date5 = document.getElementById("date5");
 // let date6 = document.getElementById("date6");
 // let date7 = document.getElementById("date7");
@@ -159,7 +159,7 @@ let wochenTag = [
 // let date9 = document.getElementById("date9");
 // let date10 = document.getElementById("date10");
 
-date5 = new Date("Februar 5, 2021 21:14:26");
+// date5 = new Date("Februar 5, 2021 21:14:26");
 // date6.innerHTML = date5;
 // console.log(date5.getFullYear());
 // console.log(date5.getMonth());
@@ -171,22 +171,22 @@ date5 = new Date("Februar 5, 2021 21:14:26");
 
 // -------------------------css uhr---------------------------------------
 
-// date5 = new Date("Februar 5, 2021 21:14:00");
-let dayname = document.getElementById("dayname")
-dayname.innerHTML = wochenTag[date5.getDay()];
-let daynum = document.getElementById("daynum");
-daynum.innerHTML = date5.getDay();
-let month = document.getElementById("month");
-month.innerHTML = date5.getMonth();
-let year = document.getElementById("year");
-year.innerHTML = date5.getFullYear();
+// // date5 = new Date("Februar 5, 2021 21:14:00");
+// let dayname = document.getElementById("dayname")
+// dayname.innerHTML = wochenTag[date5.getDay()];
+// let daynum = document.getElementById("daynum");
+// daynum.innerHTML = date5.getDay();
+// let month = document.getElementById("month");
+// month.innerHTML = date5.getMonth();
+// let year = document.getElementById("year");
+// year.innerHTML = date5.getFullYear();
 
-let hour = document.getElementById("hour");
-hour.innerHTML = date5.getHours();
-let minutes = document.getElementById("minutes");
-minutes.innerHTML = date5.getMinutes();
-let seconds = document.getElementById("seconds");
-seconds.innerHTML = date5.getSeconds();
+// let hour = document.getElementById("hour");
+// hour.innerHTML = date5.getHours();
+// let minutes = document.getElementById("minutes");
+// minutes.innerHTML = date5.getMinutes();
+// let seconds = document.getElementById("seconds");
+// seconds.innerHTML = date5.getSeconds();
 
 
 
@@ -218,90 +218,137 @@ console.log(tageImMonat(2017, 12)); //31
 
 // ----------------lvl 1 5 Monatsname--------------------
 
-const getMonthName = monthIndex => {
-    let searchMonth = new Date(monthIndex);
-    let list = [
-        "Januar",
-        "Februar",
-        "März",
-        "April",
-        "Mai",
-        "Juni",
-        "Juli",
-        "August",
-        "September",
-        "Oktober",
-        "November",
-        "Dezember"
-    ];
-    return list[searchMonth.getMonth()];
-}
-console.log(getMonthName("2001,3,4"));
-console.log(getMonthName("2019,12,24")); //Dezember
-console.log(getMonthName("1410,07,15")); //Juli
+// const getMonthName = monthIndex => {
+//     let searchMonth = new Date(monthIndex);
+//     let list = [
+//         "Januar",
+//         "Februar",
+//         "März",
+//         "April",
+//         "Mai",
+//         "Juni",
+//         "Juli",
+//         "August",
+//         "September",
+//         "Oktober",
+//         "November",
+//         "Dezember"
+//     ];
+//     return list[searchMonth.getMonth()];
+// }
+// console.log(getMonthName("2001,3,4"));
+// console.log(getMonthName("2019,12,24")); //Dezember
+// console.log(getMonthName("1410,07,15")); //Juli
 
 
 // -------lvl 1 6------ AM PM----------------
-searchAmPM1 = new Date(1999, 10, 5, 15).getHours(); //PM
-searchAmPM2 = new Date().getHours()
-searchAmPM3 = new Date(2019, 12, 3, 12).getHours(); //AM
-searchAmPM4 = new Date(2000, 1, 1, 11).getHours(); //AM
+// searchAmPM1 = new Date(1999, 10, 5, 15).getHours(); //PM
+// searchAmPM2 = new Date().getHours()
+// searchAmPM3 = new Date(2019, 12, 3, 12).getHours(); //AM
+// searchAmPM4 = new Date(2000, 1, 1, 11).getHours(); //AM
 
-const getAmPm = inputTime => {
-    // let searchAmPM = new Date(inputTime)
-    if ((new Date(inputTime)) < 12) {
-        console.log('AM')
-    }
-    else if ((new Date(inputTime)) > 12) {
-        console.log('PM');
-    }
-    return (new Date(inputTime).getHours());
-}
-getAmPm(searchAmPM1);
-getAmPm(searchAmPM2);
-getAmPm(searchAmPM3);
-getAmPm(searchAmPM4);
+// const getAmPm = inputTime => {
+//     // let searchAmPM = new Date(inputTime)
+//     if ((new Date(inputTime)) < 12) {
+//         console.log('AM')
+//     }
+//     else if ((new Date(inputTime)) > 12) {
+//         console.log('PM');
+//     }
+//     return (new Date(inputTime).getHours());
+// }
+// getAmPm(searchAmPM1);
+// getAmPm(searchAmPM2);
+// getAmPm(searchAmPM3);
+// getAmPm(searchAmPM4);
 
 // console.clear()
-// -------lvl 1 8--------------
+// -------lvl 1 7--------------
 
-let weekDay = [
-    "Sonntag",
-    "Montag",
-    "Dienstag",
-    "Mittwoch",
-    "Donnerstag",
-    "Freitag",
-    "Samstag"
+// let weekDay = [
+//     "Sonntag",
+//     "Montag",
+//     "Dienstag",
+//     "Mittwoch",
+//     "Donnerstag",
+//     "Freitag",
+//     "Samstag"
 
+// ];
+
+
+// date5 = new Date("2.15.2001");
+// console.log(weekDay[date5.getDay()]);
+// date6 = new Date("12.15.2019");
+// console.log(weekDay[date6.getDay()]);
+// date7 = new Date("2.1.2020");
+// console.log(weekDay[date7.getDay()]);
+// date8 = new Date("5.30.2022");
+// console.log(weekDay[date8.getDay()]);
+
+
+// const evaluateDay = (date) => {
+//     // Samstag = 6, Sonntag = 0;
+//     if ((new Date(date)).getDay() === 0 || ((new Date(date)).getDay() === 6)) {
+//         console.log("it's weekend")
+//     }
+//     else {
+//         console.log("keep grindin'")
+//     }
+//     return console.log((new Date(date)).getDay());
+// }
+
+// evaluateDay(date5)
+// evaluateDay(date6);
+// evaluateDay(date7);
+// evaluateDay(date8);
+
+// console.clear();
+
+// ------
+
+
+
+// ------Math Methoden
+
+// ---lvl 1_1 ---
+const PI = Math.PI;
+console.log(PI);
+roundedPI = PI.toFixed(2);
+console.log(roundedPI);
+
+// ---lvl 1_2 ---
+let array = [
+    3.14,
+    193.4464,
+    0.8596433607,
+    -2.940629089,
 ];
 
+array.forEach((number) => console.log(Math.round(number)))
 
-date5 = new Date("2.15.2001");
-console.log(weekDay[date5.getDay()]);
-date6 = new Date("12.15.2019");
-console.log(weekDay[date6.getDay()]);
-date7 = new Date("2.1.2020");
-console.log(weekDay[date7.getDay()]);
-date8 = new Date("5.30.2022");
-console.log(weekDay[date8.getDay()]);
+for (number of array) { console.log(Math.round(number)) }
+
+console.clear();
+// ---lvl 1_3 ---
+
+let randomNum = Math.random();
+console.log(randomNum);
+let randomNum1_10 = Math.random() * 10 + 1;
+console.log(randomNum1_10);
+let randomNum1_100 = Math.floor(Math.random() * 100 + 1);
+console.log(randomNum1_100);
 
 
-const evaluateDay = (date) => {
-    // Samstag = 6, Sonntag = 0;
-    if ((new Date(date)).getDay() === 0 || ((new Date(date)).getDay() === 6)) {
-        console.log("it's weekend")
-    }
-    else {
-        console.log("keep grindin'")
-    }
-    return console.log((new Date(date)).getDay());
+function getRandomNumberBetween(min, max) {
+    return Math.floor(Math.random() * (max - min + 1) + min);
 }
+console.log(getRandomNumberBetween(300, 2000));
 
-evaluateDay(date5)
-evaluateDay(date6);
-evaluateDay(date7);
-evaluateDay(date8);
+console.clear();
 
+// ---lvl 1_4---
 
-
+console.log(Math.min(393, 205, 479, 47, 376, 267, 385, 2, 190, 383, 286, 462, 115, 138, 331, 409, 427, 245, 224, 276, 483, 55, 147, 177, 208, 347, 135, 282, 33, 270, 475, 426, 476, 453, 474, 351, 219, 358, 354, 410, 240, 139, 371, 356, 277, 202, 264, 204, 447, 488));
+console.log(Math.max(393, 205, 479, 47, 376, 267, 385, 2, 190, 383, 286, 462, 115, 138, 331, 409, 427, 245, 224, 276, 483, 55, 147, 177, 208, 347, 135, 282, 33, 270, 475, 426, 476, 453, 474, 351, 219, 358, 354, 410, 240, 139, 371, 356, 277, 202, 264, 204, 447, 488));
+console.clear();
